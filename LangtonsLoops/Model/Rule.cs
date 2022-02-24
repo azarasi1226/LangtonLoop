@@ -12,7 +12,7 @@ namespace Model
         public Rule()
         {
             // テキストファイルからルールの種を呼び出す
-            var ruleSeed = File.ReadLines(@"C:\text\ルール.txt")
+            var ruleSeed = File.ReadLines(@"./seed.txt")
                             .Select(str => new
                             {
                                 Key = str.Substring(0, 5),
